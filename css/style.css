@@ -30,6 +30,12 @@ img{max-width:100%;}
 /*----importing-fonts---*/
 /*-----light-font----*/
 /*----//importing-fonts---*/
+html, body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
 body{
 	font-family:trebuchet ms, arial, sans-serif;
 	background: #fff;
@@ -42,6 +48,7 @@ body{
 .content
 {
 	background: #252A2F;
+	flex: 1;
 }
 #page{
 	display:none;
@@ -539,6 +546,8 @@ input:focus {
 /*****footer*****/
 .footer {
 	background: #252A2F;
+	padding: 1.85em 1em;
+	text-align: center; /* Optional: Center text */
 }
 .footer-left {
 	float: left;
