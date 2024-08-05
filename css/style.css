@@ -426,12 +426,19 @@ input:focus {
 	float:right;
 	width:42%;
 }
-.main_right span
-{
-	width: 320px;
-	height:492px;
-	display: block;
-	background: url(../images/index.png) no-repeat;
+.main_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container has a height */
+}
+
+.main_right span {
+    width: 320px;
+    height: 492px;
+    display: block;
+    background: url(../images/index.png) no-repeat center center;
+    background-size: contain; /* Ensure the image scales properly */
 }
 .buttons
 {
